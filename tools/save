@@ -1,6 +1,6 @@
 [alias]
 	# A shortcut for creating fast and simple commits
-	#   Merges 'git add', 'git commit', and 'git push' into a single command!
+	#   Merges 'git add', 'git commit', 'git push', and 'git status' into a single command!
 	# The inputs can be at any order:
 	#   "title":               Its the first string
 	#   "message":             Its the second string. All other following strings are ignored
@@ -123,8 +123,8 @@
 		fi; \
 		\
 		if [[ -n $titulo || -n $amend || -n $reamend ]]; then \
-			echo \">> git log -1\"; \
-			git log -1; \
+			echo \">> git status\"; \
+			git status; \
 			echo \"\"; \
 		else \
 			echo \"fatal: no commit message provided!\"; \

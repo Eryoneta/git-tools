@@ -21,7 +21,7 @@ A set of useful shortcuts for _Git_ commands.
 <details>
 	<summary><code>git save</code></summary>
 	<ul>
-		<li>Allows to execute <code>git add -A</code>, <code>git commit</code>, <code>git push</code>, and <code>git log -1</code>, all at once. It is a bash function.</li>
+		<li>Allows to execute <code>git add -A</code>, <code>git commit</code>, <code>git push</code>, and <code>git status</code>, all at once. It is a bash function.</li>
 		<li>
 			<b>Usage:</b>
 			<ul>
