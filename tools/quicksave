@@ -1,0 +1,11 @@
+[alias]
+	# Quick commit
+	#   Executes 'git save' with title defined as the current date
+	#     Date format: 'dd/mm/YYYY'
+	#   It can be used the same way as 'git save', but the title pre-defined
+	# Ex.: 'git quicksave --amend --push "Message"'
+	quicksave = "!f() { \
+		printf -v titulo '%(%d/%m/%Y)T' -1; \
+		git save \"$titulo\" \"$@\"; \
+	}; \
+	f"
